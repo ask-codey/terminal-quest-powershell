@@ -1,0 +1,2 @@
+A mission patch with a kestrel on it: KESTREL-1. This is ours,
+made for this launch.

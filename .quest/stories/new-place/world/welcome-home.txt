@@ -1,0 +1,20 @@
+Welcome to your new place!
+
+The movers dropped everything in the hallway and I had to run.
+Here's what still needs doing:
+
+  1. Read the packing list. It's long, so look at the top:
+        Get-Content -TotalCount hallway/packing-list.txt
+  2. Make a bookshelf (a new folder) in the living room.
+  3. Put every book on it. They all end in .book, and a * stands
+     for "anything", so *.book means every book at once.
+  4. Unpack the kitchen box into the kitchen.
+  5. COPY the spare key into the mailbox for your neighbor.
+     Copy, don't move: you need one too!
+  6. Throw out the broken vase and the bubble wrap.
+  7. Get rid of the empty boxes.
+  8. Make a name sign for the door (a new file).
+  9. Add "water the plants" to the to-do list.
+
+You've got this.
+  - Jo

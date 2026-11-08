@@ -1,0 +1,26 @@
+# The Lighthouse's walkthrough: every treasure, the coin and the finish. The tests play it. Generated: don't edit.
+$script:QS_WALKTHROUGH = @(
+  'Get-Location',
+  'Get-ChildItem',
+  'Get-Content welcome.txt',
+  'Set-Location cottage',
+  'Set-Location bedroom',
+  'Get-Content diary.txt',
+  'Set-Location drawer',
+  'Get-Content brass-compass.txt',
+  'Set-Location ..',
+  'Get-ChildItem -Force',
+  'Get-Content .loose-floorboard\tin\lucky-coin.txt',
+  'Set-Location ..\kitchen\cupboard',
+  'Get-Content matches.txt',
+  'Set-Location ~\lighthouse\shore',
+  'Get-ChildItem -Force',
+  'Get-Content bottle.txt',
+  'Get-Content .crab-shell\pearl.txt',
+  'Set-Location ..\tower\stairs\landing',
+  'Get-ChildItem -Force',
+  'Get-Content .nest\silver-feather.txt',
+  'Set-Location lantern-room',
+  'Get-History',
+  'Get-Content lamp.txt'
+)

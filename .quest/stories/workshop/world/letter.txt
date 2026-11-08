@@ -1,0 +1,31 @@
+To my new apprentice,
+
+I'm away at the inventors' fair. The machines here are
+scripts: .ps1 files that DO something when you run them, like
+.\kettle-bot.ps1. Before the bell can ring at noon, they all
+need to work. They won't yet:
+
+  1. This computer doesn't let scripts run at all. That's its
+     execution policy: Get-ExecutionPolicy shows it, and
+     Set-ExecutionPolicy -Scope CurrentUser RemoteSigned lets
+     your own scripts run.
+  2. The kettle-bot came from the internet, so it is blocked
+     even then. If you trust it, Unblock-File it.
+  3. Once it runs, it wants POWER. Machines read settings from
+     environment variables:  $env:POWER = "on"
+  4. The oil can lives in tools\. Add that folder to your PATH
+     (the list of places PowerShell looks for programs) so you
+     can type just: oil gears
+  5. Winding the clock takes .\clock.ps1 --wind --twice every
+     time. Give it a short name, tick. (An alias can't hold
+     the --wind --twice part, so make a function.)
+  6. The gearbox needs its settings loaded into YOUR session:
+     dot-source them with  . .\settings.ps1
+     (Just running .\settings.ps1 forgets them when it ends.)
+  7. Run the gearbox, and only if it works, ring the bell:
+     .\gearbox.ps1 && .\bell.ps1
+
+Read a machine before you run it: Get-Content kettle-bot.ps1.
+Programs often do more than you'd think.
+
+- Ada

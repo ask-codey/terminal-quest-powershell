@@ -1,0 +1,9 @@
+14:43 door=map-room badge=2041 in (tour)
+15:17 door=map-room badge=2041 out (tour)
+17:45 door=west badge=6188 out
+19:43 door=east badge=3317 in
+20:39 door=east badge=3317 out
+21:03 door=front badge=5520 in
+23:30 door=reading-room badge=5520 check
+02:10 door=front badge=5520 check
+06:52 door=front badge=5520 out

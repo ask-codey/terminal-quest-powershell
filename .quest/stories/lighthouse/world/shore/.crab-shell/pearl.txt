@@ -1,0 +1,4 @@
+Under the crab shell, half buried in the sand: a pearl.
+
+Names that start with a dot are hidden. Get-ChildItem skips them;
+Get-ChildItem -Force shows them.

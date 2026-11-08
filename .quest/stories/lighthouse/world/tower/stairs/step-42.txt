@@ -1,0 +1,4 @@
+Step 42. Halfway there.
+
+Tip: you can go down several folders at once, like this:
+   Set-Location landing\lantern-room

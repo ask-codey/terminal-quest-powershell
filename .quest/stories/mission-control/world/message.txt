@@ -1,0 +1,9 @@
+TRANSMISSION RECEIVED 06:12
+static static static
+CODE 2/2: 17
+weather: clear over the range
+static static
+reminder: water the office plant
+CODE 1/2: 44
+static
+END OF TRANSMISSION

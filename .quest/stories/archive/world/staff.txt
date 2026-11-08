@@ -1,0 +1,6 @@
+BADGE  NAME          JOB            LOCKERS
+2041   Imani Osei    archivist      upstairs
+3317   Rosa Lind     cleaner        basement
+5520   Sam Okafor    night guard    basement
+6188   Lee Park      librarian      upstairs
+7714   Otto Brandt   night porter   basement

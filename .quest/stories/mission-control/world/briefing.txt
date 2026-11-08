@@ -1,0 +1,32 @@
+FLIGHT DIRECTOR'S BRIEFING: KESTREL-1 LAUNCH
+
+Before .\launch.ps1 will go, I need these done:
+
+  1. STOP THE ALARM. It's a runaway program. Get-Process lists
+     what's running; Stop-Process -Name alarm stops it.
+
+  2. RENAME THE TELEMETRY. Every telemetry\*.tmp file must end
+     in .log instead. Thirty of them: use a loop, not thirty
+     commands.  foreach ($f in Get-ChildItem ...) { ... }
+     ($f.BaseName is the name without its extension.)
+
+  3. CHECK THE SENSORS. Write a script, check.ps1, that outputs
+     the name of every sensor in sensors\ hotter than 90 (each
+     file says temp=NN). Then send its output to the uplink:
+        .\check.ps1 | .\uplink.ps1
+     Write it with:  notepad check.ps1
+
+  4. SEND THE BEACON. Write a script, beacon.ps1, that takes a
+     callsign with param($Callsign) and outputs
+     BEACON <callsign>. Then:
+        .\beacon.ps1 KESTREL | .\transmitter.ps1
+
+  5. LAUNCH:  .\launch.ps1
+
+Spares: our mission patch is in one of the crates (find it,
+there are a lot of patches in there), the photo viewer only
+shows a file called "wallpaper" (a link to a photo will do),
+and the safe code came in this morning, buried in
+message.txt.
+
+  - Director Tamsin Hale

@@ -1,0 +1,21 @@
+Welcome, new keeper!
+
+The lamp went out in the storm, and ships need it tonight. I've
+gone to the mainland for parts. You can get it lit without me.
+
+How this place works:
+  - Places are folders. To go into one, type Set-Location and its
+    name, like this:  Set-Location cottage
+  - Notes are files. To read one, type Get-Content and its name.
+  - To see what's around you, type Get-ChildItem.
+  - To go back out of a folder, type:  Set-Location ..
+    (two dots mean "the folder I'm inside of")
+
+The spare matches are somewhere in the cottage. My diary will
+help. The lamp is at the very top of the tower.
+
+  - Mara
+
+P.S. Long names? Type the first few letters and press Tab: the
+     terminal finishes the name for you.
+P.P.S. Screen getting full? Clear-Host wipes it clean.

@@ -1,0 +1,10 @@
+THE LOGBOOK
+
+Every keeper writes down what they did, so the next keeper
+knows. Your terminal keeps a log too: every command you have
+typed. To see it, type:
+
+   Get-History
+
+And the up arrow brings back your last command, so you never
+have to type the same thing twice.

@@ -1,0 +1,26 @@
+# The Clockwork Workshop's walkthrough: every treasure, the coin and the finish. The tests play it. Generated: don't edit.
+$script:QS_WALKTHROUGH = @(
+  'Get-Content letter.txt',
+  'Get-ExecutionPolicy',
+  'Get-Content kettle-bot.ps1',
+  'Get-ChildItem -Force drawer-3',
+  'Get-Content drawer-3\.velvet-bag\golden-cog.txt',
+  'Set-ExecutionPolicy -Scope CurrentUser RemoteSigned',
+  '.\kettle-bot.ps1',
+  'Unblock-File .\kettle-bot.ps1',
+  '$POWER = "on"',
+  '.\kettle-bot.ps1',
+  '$env:POWER = "on"',
+  '.\kettle-bot.ps1',
+  '$env:PATH += ";$HOME\workshop\tools"',
+  'oil gears',
+  'Get-Content clock.ps1',
+  '.\clock.ps1 --secret',
+  'function tick { .\clock.ps1 --wind --twice }',
+  'tick',
+  'Get-Content attic\music-box.txt',
+  '.\gearbox.ps1',
+  '. .\settings.ps1',
+  'Get-Content bell.ps1',
+  '.\gearbox.ps1 && .\bell.ps1 --three-times'
+)

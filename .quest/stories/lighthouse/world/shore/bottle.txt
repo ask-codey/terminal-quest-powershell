@@ -1,0 +1,6 @@
+A green glass bottle, washed up by the storm. Inside: a tiny
+ship, perfect in every detail, and a curled-up note.
+
+The note says:
+   "Not everything on this shore is out in the open.
+    Look closer:  Get-ChildItem -Force"

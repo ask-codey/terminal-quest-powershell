@@ -1,0 +1,23 @@
+17:30 door=west badge=6188 out
+18:00 door=front badge=guest-01 in (party)
+18:13 door=front badge=guest-02 in (party)
+18:26 door=front badge=guest-03 in (party)
+18:39 door=front badge=guest-04 in (party)
+19:05 door=front badge=guest-06 in (party)
+19:18 door=front badge=guest-07 in (party)
+19:31 door=east badge=3317 in
+19:31 door=front badge=guest-08 in (party)
+19:52 door=front badge=guest-05 in (party)
+20:10 door=front badge=guest-11 in (party)
+20:23 door=front badge=guest-12 in (party)
+20:44 door=front badge=guest-09 in (party)
+20:52 door=east badge=3317 out
+20:57 door=front badge=guest-10 in (party)
+21:02 door=front badge=guest-15 in (party)
+21:09 door=front badge=5520 in
+21:15 door=front badge=guest-16 in (party)
+21:36 door=front badge=guest-13 in (party)
+21:49 door=front badge=guest-14 in (party)
+02:33 door=front badge=5520 check
+06:57 door=front badge=5520 out
+07:30 note: someone left a silver coin on the reading room coat rack (reading-room/.coat-rack)
