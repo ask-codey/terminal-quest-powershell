@@ -1,0 +1,37 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: Pester on ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pester 5
+        shell: pwsh
+        run: |
+          if (-not (Get-Module -ListAvailable Pester | Where-Object { $_.Version.Major -ge 5 })) {
+            Install-Module Pester -MinimumVersion 5.5.0 -Scope CurrentUser -Force -SkipPublisherCheck
+          }
+
+      # RemoteSigned for this run only (-ExecutionPolicy sets the process's policy), so a blocked script behaves as on a
+      # player's Windows computer.
+      - name: Play every adventure, and test the quest command
+        shell: pwsh
+        run: |
+          pwsh -NoProfile -ExecutionPolicy RemoteSigned -Command {
+            Import-Module Pester -MinimumVersion 5.5.0
+            $config = New-PesterConfiguration
+            $config.Run.Path = './tests'
+            $config.Run.Exit = $true
+            $config.Output.Verbosity = 'Detailed'
+            Invoke-Pester -Configuration $config
+          }
