@@ -249,7 +249,10 @@ function q_start_process([string]$name) {
       Copy-Item -LiteralPath (Get-Command sleep -CommandType Application | Select-Object -First 1).Source -Destination $exe
       & chmod +x $exe
     }
-    $p = Start-Process -FilePath $exe -ArgumentList '86400' -PassThru -RedirectStandardOutput ([System.IO.Path]::GetTempFileName())
+    # Nothing of this shell's is handed down to it: a program that holds on to its output would keep anything reading
+    # that output (a script capturing quest.ps1's) waiting for a day.
+    $p = Start-Process -FilePath $exe -ArgumentList '86400' -PassThru -RedirectStandardInput '/dev/null' `
+      -RedirectStandardOutput '/dev/null' -RedirectStandardError (Join-Path $bin "$name.err")
   }
   Set-Content -LiteralPath (q_file "pids/$name") -Value $p.Id
 }
