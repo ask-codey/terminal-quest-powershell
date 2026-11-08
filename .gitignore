@@ -1,0 +1,7 @@
+# Adventures you play are laid out here, and what you did is kept beside them: none of it belongs in git.
+/*/
+!/.quest/
+!/tests/
+!/.github/
+/.quest/state/
+/game-history.csv
